@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mokaform-front
+spec:
+  selector:
+    matchLabels:
+      app: mokaform-front
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: mokaform-front
+    spec:
+      containers:
+        - name: mokaform-front
+          image: adad05011/mokaform-front:0
+          ports:
+            - containerPort: 80

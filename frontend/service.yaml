@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mokaform-front
+  labels:
+    app: mokaform-front
+spec:
+  type: ClusterIP
+  selector:
+    app: mokaform-front
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
