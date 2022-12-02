@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mokaform-backend
+spec:
+  selector:
+    matchLabels:
+      app: mokaform-backend
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: mokaform-backend
+    spec:
+      containers:
+        - name: mokaform-backend
+          image: adad05011/mokaform-backend:0
+          ports:
+            - containerPort: 80
