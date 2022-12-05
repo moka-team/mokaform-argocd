@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: mokaform-backend
-          image: adad05011/mokaform-backend:6
+          image: adad05011/mokaform-backend:7
           ports:
             - containerPort: 8080
