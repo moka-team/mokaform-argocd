@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: mokaform-front
-          image: adad05011/mokaform-front:27
+          image: adad05011/mokaform-front:28
           ports:
             - containerPort: 80
